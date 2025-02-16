@@ -42,7 +42,7 @@ export const sendMail = async (req, res) => {
     },
   });
 
-  const verificationLink = `http://localhost:8080/api/verify?token=${token}`;
+  const verificationLink = `${process.env.API_URL}/api/verify?token=${token}`;
 
   const mailOptions = {
     from: `Lisa B Karlmark <${process.env.EMAIL_USER}>`,

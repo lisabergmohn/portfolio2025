@@ -15,7 +15,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Tillåter bara anrop från din Vite-app
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
     methods: "GET,POST",
     credentials: true,
   })
