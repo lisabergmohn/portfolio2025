@@ -1,0 +1,150 @@
+html,
+body,
+#root {
+  height: 100vh;
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  line-height: 1.6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #cce3de !important;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: solid black 1px;
+  text-transform: uppercase;
+}
+
+.MyContainer {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: #cce3de;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: solid black 1px;
+}
+
+ 
+/* CustomForm */
+
+.CustomForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.CustomForm label {
+  text-transform: uppercase;
+}
+
+
+.ContactBtn {
+  background-color: #1e6582;
+  color: #fdfdfd;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.ContactBtn:hover {
+  background-color: transparent !important;
+  border: #1e6582 1px solid;
+  color: #1e6582;
+}
+
+/* Footer */
+.footer {
+  background-color: #cce3de;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: solid black 1px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Home */
+.image {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: solid black 1px;
+}
+
+.message {
+  white-space: pre-line;
+}
+.thankYouContainer {
+  display: flex;
+  align-items: center; /* Vertikal centrerad */
+  justify-content: center;
+  gap: 2rem; /* Mellanrum mellan text och bild */
+}
+
+.footerLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerLink:hover {
+  cursor: pointer;
+  color:#1e6582;
+} 
+
+/* ===== Responsiva 768px  ===== */
+@media (min-width: 768px) {
+  .image {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    max-width: 200px;
+    width: auto;
+  }
+
+  .MyContainer {
+    padding: 2rem;
+  }
+
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* ===== Responsiva 1024x  ===== */
+@media (min-width: 1024px) {
+  .navItems {
+    margin-left: auto;
+    display: flex; /* Säkerställ att vi har en flexcontainer */
+  }
+
+  .MyContainer {
+    padding: 4rem;
+  }
+}
