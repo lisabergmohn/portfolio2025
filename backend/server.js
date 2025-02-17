@@ -1,9 +1,8 @@
-import express from "express";
 import dotenv from "dotenv";
+import express from "express";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
-
 import connectDB from "./config/MongoDB.js";
 import { verifyAndShowCv } from "./controller/Verify.js";
 import { sendMail } from "./controller/Auth.js";
