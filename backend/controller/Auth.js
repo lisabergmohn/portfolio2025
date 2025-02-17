@@ -53,7 +53,7 @@ export const sendMail = async (req, res) => {
   };
 
   try {
-    transporter.sendMail(mailOptions);
+   await transporter.sendMail(mailOptions);
     return res
     .status(200)
     .json({ message: "Länk skickad till e-post" });

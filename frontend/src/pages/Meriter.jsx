@@ -11,11 +11,14 @@ function Meriter() {
   const [searchParams] = useSearchParams();
   const [linkSent, setLinkSent] = useState(false);
 
+  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/send", {
+      const response = await fetch(`${apiUrl}/api/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

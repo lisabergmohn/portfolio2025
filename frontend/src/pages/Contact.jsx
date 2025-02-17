@@ -10,12 +10,14 @@ function Contact() {
   const [responseMessage, setResponseMessage] = useState("");
   const [linkSent, setLinkSent] = useState(false);
 
+  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+
   // Skicka e-post via backend
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/contact", {
+      const response = await fetch(`${apiUrl}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
