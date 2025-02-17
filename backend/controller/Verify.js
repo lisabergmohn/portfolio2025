@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import verifyToken from '../models/User.js'
 import path from 'path';
 
-dotenv.config();
+dotenv.config(); 
 
 export const verifyAndShowCv = async (req, res) => {
     const token = req.query.token;
@@ -14,7 +14,7 @@ export const verifyAndShowCv = async (req, res) => {
 
     try {
         // verifiera jwt-signaturen
-        //const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
         // kolla om token finns i databas och är giltlig
         const record = await verifyToken.findOne({ token });
