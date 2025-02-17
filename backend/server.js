@@ -34,7 +34,7 @@ const router = express.Router();
 app.use("/api", router);
 app.use("/api/contact", contactRoutes);
 
-router.get("/verify", verifyAndShowCv);
+router.get("/api/verify", verifyAndShowCv);
 router.post("/send", sendMail);
 
 app.get("/api/emails", async (req, res) => {

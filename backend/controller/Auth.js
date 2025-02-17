@@ -6,6 +6,7 @@ import EmailList from "../models/EmailList.js";
 import verifyToken from "../models/User.js";
 
 dotenv.config();
+console.log(process.env.API_URL);
 
 export const sendMail = async (req, res) => {
   const { email } = req.body;
