@@ -1,7 +1,7 @@
 import About from "./pages/About.jsx";
 import Book from "./pages/Book.jsx";
 import CostumNavbar from "./components/Navbar.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomFooter from "./components/Footer.jsx";
 import styles from './styles/globals.module.css';
 
