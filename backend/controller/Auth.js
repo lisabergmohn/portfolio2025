@@ -42,9 +42,9 @@ export const sendMail = async (req, res) => {
     },
   });
 
-  const verificationLink = `${process.env.API_URL}/api/verify?token=${token}`;
+  //const verificationLink = `${process.env.API_URL}/api/verify?token=${token}`;
 
-  //const verificationLink = `https://www.datalisa.se/api/verify?token=${token}`;
+  const verificationLink = `https://www.datalisa.se/api/verify?token=${token}`;
 
 
   const mailOptions = {

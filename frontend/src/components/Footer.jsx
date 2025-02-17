@@ -22,7 +22,7 @@ function CustomFooter() {
             </li>
             <li>
               <a
-                href="https://www.google.com/maps/place/Robertsh%C3%B6jd,+Göteborg" className={styles.footerLink}
+                href="https://maps.app.goo.gl/9mgJgycWguTmj3oG6" className={styles.footerLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
